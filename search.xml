@@ -4,6 +4,45 @@
   
     
     <entry>
+      <title>9.23日志</title>
+      <link href="/2021/09/23/9-23%E6%97%A5%E5%BF%97/"/>
+      <url>/2021/09/23/9-23%E6%97%A5%E5%BF%97/</url>
+      
+        <content type="html"><![CDATA[<h1 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h1><p>1、下载mysql 下载phpstudy </p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>9.17日志</title>
+      <link href="/2021/09/18/9-17%E6%97%A5%E5%BF%97/"/>
+      <url>/2021/09/18/9-17%E6%97%A5%E5%BF%97/</url>
+      
+        <content type="html"><![CDATA[<h1 id="爬虫"><a href="#爬虫" class="headerlink" title="爬虫"></a>爬虫</h1><p>1、下载npm i cheerio </p><p>2、引入 let cheerio = require(‘cheerio’)</p><p>3、</p><pre><code class="js">async function request () &#123;    //process.argv[2]&#125;获取npm参数  let res = await   //请求当前的页面信息  axios.get(`https://dict.youdao.com/w/eng/$&#123;process.argv[2]&#125;`);    //获取页面信息  let $ = cheerio.load(res.data);    //获取那个节点下面的信息并且解析  let text = $(&#39;#results-contents .trans-container ul li&#39;).text();  console.log(text.split(&#39;\n&#39;)[0]);&#125;request()</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>9.16日志</title>
+      <link href="/2021/09/16/9-16%E6%97%A5%E5%BF%97/"/>
+      <url>/2021/09/16/9-16%E6%97%A5%E5%BF%97/</url>
+      
+        <content type="html"><![CDATA[<h1 id="9-16日志"><a href="#9-16日志" class="headerlink" title="9.16日志"></a>9.16日志</h1><h3 id="treer目录树"><a href="#treer目录树" class="headerlink" title="treer目录树"></a>treer目录树</h3><h3 id="命令编辑"><a href="#命令编辑" class="headerlink" title="命令编辑"></a>命令编辑</h3><p>插件 require</p><blockquote><p>js</p><p>组件</p></blockquote><p>node </p><p>anywhere</p><p>1.在浏览器调试 步骤</p><p>2.ejs：服务端渲染</p><p>​    1.后台渲染（jsp asp C#）</p><p>​        1.优点一个人把前后端的东西 都干了</p><p>​        2.缺点 不方便维护</p><p>​        3.有利于seo优化</p><p>​        4.什么场景：门户网站 官网</p><p>​    2.前端渲染 前后端分离 前端渲染 SPA</p><p>​        1.后台：java</p><p>​        2.前端：js前端</p><p>​        3.优点：方便维护</p><p>​        4.缺点：js（特别大）+html+css：首屏的速度特别慢：服务端渲染</p><p>​        5.场景：后台管理</p><p>​    3.nuxt(vue) next(react)</p><p>实现anywhere：</p><p>1、启动服务</p><p>2、打开浏览器</p><pre><code class="js">let express = require(&#39;express&#39;)let fs = require(&#39;fs&#39;)let childProcess = require(&#39;child_process&#39;)let pathRoot = process.cwd()//process.cwd() node里面的进程对象//process。ENV.NODE_ENV:生产环境还是开发let app = express()const port = 3000app.use((req, res, next) =&gt; &#123;  let fileList = fs.readdirSync(pathRoot)  res.send(&#123; msg: pathRoot, fileList &#125;)&#125;)app.listen(port, () =&gt; &#123;  console.log(&#39;http://localhost:3000&#39;)  if (process.platform === &#39;win32&#39;) &#123;    childProcess.exec(&#39;start http://localhost:3000&#39;)  &#125; else &#123;    childProcess.exec(&#39;open http://localhost:3000&#39;)  &#125;&#125;)</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>9.15</title>
       <link href="/2021/09/15/9-15/"/>
       <url>/2021/09/15/9-15/</url>

@@ -1,5 +1,37 @@
 <!DOCTYPE html><html class="appearance-auto" lang="en"><head><meta charset="UTF-8"><title>贺鹏's blog</title><meta name="description" content="苦心人天不负卧薪尝胆三千越甲可吞吴"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
-<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/widget-post-list.css"><meta name="generator" content="Hexo 5.4.0"></head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">贺鹏's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><span>Archives · All</span></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/about">About</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/about">About</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></header><main><article class="post-container is-flex is-justify-content-center section container is-max-widescreen pt-4 px-2"><div class="columns is-variable is-1-tablet is-3-desktop-only is-2-widescreen is-full-width"><section class="column"><article class="post-item-card"><header class="is-relative is-flex"><div class="post-cover-backdrop is-hidden"><img src="https://cdn.jsdelivr.net/gh/hepeng999/cdn/img/image-20210915151139348.png" alt="loading.."></div><a class="post-cover-link has-text-centered skeleton" href="/2021/09/15/9-15/"><img class="post-cover-img js-img-fadeIn" src="https://cdn.jsdelivr.net/gh/hepeng999/cdn/img/image-20210915151139348.png" alt="loading.." data-backdrop="true"></a></header><section class="content post-card-content p-4 pb-5"><h2 class="mt-4 mb-0 is-family-serif"><a href="/2021/09/15/9-15/">9.15</a></h2><time class="has-text-grey" datetime="2021-09-15T06:03:55.000Z">2021-09-15</time><p class="is-flex-grow-2 mt-2">专高五（高级node）1、认识node公司的服务器：java
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/style/common/bulma.css"><link rel="stylesheet" href="/style/base.css"><link rel="stylesheet" href="/style/common/helper.css"><script src="/js/common.js"></script><link rel="stylesheet" href="/style/widget-post-list.css"><meta name="generator" content="Hexo 5.4.0"></head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/">贺鹏's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><span>Archives · All</span></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/about">About</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/">Home</a></h3><h3 class="is-inline-block"><a href="/about">About</a></h3><h3 class="is-inline-block"><a href="/archives">Archives</a></h3></header><main><article class="post-container is-flex is-justify-content-center section container is-max-widescreen pt-4 px-2"><div class="columns is-variable is-1-tablet is-3-desktop-only is-2-widescreen is-full-width"><section class="column"><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><h2 class="mt-4 mb-0 is-family-serif"><a href="/2021/09/23/9-23%E6%97%A5%E5%BF%97/">9.23日志</a></h2><time class="has-text-grey" datetime="2021-09-23T07:48:13.000Z">2021-09-23</time><p class="is-flex-grow-2 mt-2">mysql1、下载mysql 下载phpstudy 
+</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2021/09/23/9-23%E6%97%A5%E5%BF%97/">Read more</a></section></article><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><h2 class="mt-4 mb-0 is-family-serif"><a href="/2021/09/18/9-17%E6%97%A5%E5%BF%97/">9.17日志</a></h2><time class="has-text-grey" datetime="2021-09-18T03:46:45.000Z">2021-09-18</time><p class="is-flex-grow-2 mt-2">爬虫1、下载npm i cheerio 
+2、引入 let cheerio = require(‘cheerio’)
+3、
+async function request () &amp;#123;
+    //process.argv[2]&amp;#125;获取npm参数
+  let res = await 
+  //请求当前的页面信息
+  axios.get(`https://dict.youdao.com/w/eng/$&amp;#123;process.argv[2]&amp;#125;`);
+    //获取页面信息
+  let $ = cheerio.load(res.data);
+    //获取那个节点下面的信息并且解析
+  let text = $(&amp;#39;#results-contents .trans-contai..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2021/09/18/9-17%E6%97%A5%E5%BF%97/">Read more</a></section></article><article class="post-item-card"><section class="content post-card-content p-4 pb-5"><h2 class="mt-4 mb-0 is-family-serif"><a href="/2021/09/16/9-16%E6%97%A5%E5%BF%97/">9.16日志</a></h2><time class="has-text-grey" datetime="2021-09-16T07:24:24.000Z">2021-09-16</time><p class="is-flex-grow-2 mt-2">9.16日志treer目录树命令编辑插件 require
+
+js
+组件
+
+node 
+anywhere
+1.在浏览器调试 步骤
+2.ejs：服务端渲染
+​    1.后台渲染（jsp asp C#）
+​        1.优点一个人把前后端的东西 都干了
+​        2.缺点 不方便维护
+​        3.有利于seo优化
+​        4.什么场景：门户网站 官网
+​    2.前端渲染 前后端分离 前端渲染 SPA
+​        1.后台：java
+​        2.前端：js前端
+​        3.优点：方便维护
+​        4.缺点：js（特别大）+html+css：首屏的速度特别慢：服务端渲染
+​        5.场景：后台管理
+​    3.nuxt(vue) ..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2021/09/16/9-16%E6%97%A5%E5%BF%97/">Read more</a></section></article><article class="post-item-card"><header class="is-relative is-flex"><div class="post-cover-backdrop is-hidden"><img src="https://cdn.jsdelivr.net/gh/hepeng999/cdn/img/image-20210915151139348.png" alt="loading.."></div><a class="post-cover-link has-text-centered skeleton" href="/2021/09/15/9-15/"><img class="post-cover-img js-img-fadeIn" src="https://cdn.jsdelivr.net/gh/hepeng999/cdn/img/image-20210915151139348.png" alt="loading.." data-backdrop="true"></a></header><section class="content post-card-content p-4 pb-5"><h2 class="mt-4 mb-0 is-family-serif"><a href="/2021/09/15/9-15/">9.15</a></h2><time class="has-text-grey" datetime="2021-09-15T06:03:55.000Z">2021-09-15</time><p class="is-flex-grow-2 mt-2">专高五（高级node）1、认识node公司的服务器：java
 为什么选择java而不选择node:java 20多年：成熟，稳定（jdk）
 node:做什么
 
@@ -111,31 +143,7 @@ B: git add .
 6、预览：github用户名.github.io下午git的操作cvs:svn :git :码云，github，gitab，coding+腾讯云怎么使用git
 基于命令
 
-1234567891011121314151617181..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2021/08/19/8-19%E6%97%A5%E5%BF%97/">Read more</a></section></article><article class="post-item-card"><header class="is-relative is-flex"><div class="post-cover-backdrop is-hidden"><img src="https://cdn.jsdelivr.net/gh/hepeng999/cdn/img/1.png" alt="loading.."></div><a class="post-cover-link has-text-centered skeleton" href="/2021/08/18/8-18%E6%97%A5%E5%BF%97/"><img class="post-cover-img js-img-fadeIn" src="https://cdn.jsdelivr.net/gh/hepeng999/cdn/img/1.png" alt="loading.." data-backdrop="true"></a></header><section class="content post-card-content p-4 pb-5"><h2 class="mt-4 mb-0 is-family-serif"><a href="/2021/08/18/8-18%E6%97%A5%E5%BF%97/">8.18日志</a></h2><time class="has-text-grey" datetime="2021-08-18T06:57:25.000Z">2021-08-18</time><p class="is-flex-grow-2 mt-2">2021.08.18 上午1、创建一个博客用来记录一天的工作1npm i hexo-cli -g 
-
-查看git版本1git --version 
-
-
-
-创建新的hexo1hexo init ‘文件名’
-
-启动hexo1hexo s
-
-创建新的文件1hexo new &amp;#x27;文件名&amp;#x27;
-
-
-
-2、用github来加速上传文件1、cdn加速地址1、图片类型
-2、音频
-3、视频
-4、js
-5、css
-2、创建github账号3 、创建一个新仓库
-3、克隆仓库1git clone git@github.com:hepeng999/cdn.git
-
-
-
-4、提交到github123git add .git commit - m &amp;#x27;添加图片到cdn&amp;#x27;git push origin ma..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2021/08/18/8-18%E6%97%A5%E5%BF%97/">Read more</a></section></article></section><aside class="column is-hidden-mobile is-4-tablet is-3-widescreen"><div style="position: sticky; top: 50px;"><main class="aside-card-container archives-widget is-in-archive-page"><h3>Archives</h3><section><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">6</span></li></ul></section></main></div></aside></div></article><script>$claudia.fadeInImage(null, $claudia.blurBackdropImg)
+1234567891011121314151617181..</p><a class="button is-default mt-2 has-text-weight-semibold" href="/2021/08/19/8-19%E6%97%A5%E5%BF%97/">Read more</a></section></article><section class="paginator is-flex is-justify-content-flex-end is-flex-wrap-wrap mt-5"><span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="iconfont icon-next has-text-grey"></i></a></section></section><aside class="column is-hidden-mobile is-4-tablet is-3-widescreen"><div style="position: sticky; top: 50px;"><main class="aside-card-container archives-widget is-in-archive-page"><h3>Archives</h3><section><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a><span class="archive-list-count">6</span></li></ul></section></main></div></aside></div></article><script>$claudia.fadeInImage(null, $claudia.blurBackdropImg)
 
 window.addEventListener('resize', $claudia.throttle(function () {
     var images = document.querySelectorAll('.js-img-fadeIn')
